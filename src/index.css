@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(assets/pexels-mart-production-7718677.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.my-to-do, .to-do-block {
+  margin: 112px;
+  padding: 34px;
+  width: 520px;
+  height: 320px;
+  border-radius: 34px;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: 7px 7px 7px 7px rgba(13, 11, 11, 0.2);
+}
+
+.my-to-do {
+  background-color: rgb(206, 196, 245);
+}
+
+.to-do-block {
+  background-color: rgb(156, 175, 252);
+  text-shadow: 3px 2px 2px #0664fc4d;
+}
+
+.add-task, .delete-task, .move-up, .move-down {
+  border-radius: 50px;
+  border: none;
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+.add-task {
+  width: 95px;
+  height: 55px;
+}
+
+.get-tasks {
+  border-radius: 50px;
+  border: none;
+  padding: 22px 113px;
+}
+
+.delete-task {
+  background-color: rgb(255, 117, 117);
+}
+
+.delete-task:hover, .move-up:hover, .move-down:hover {
+  cursor: pointer;
+}
+
+.delete-task:hover {
+  background-color: rgb(247, 73, 73);
+}
+
+.move-up {
+  background-color: rgb(98, 178, 248);
+}
+
+.move-up:hover {
+  background-color: rgb(55, 161, 255);
+}
+
+.move-down {
+  background-color: rgb(255, 216, 139);
+}
+
+.move-down:hover {
+  background-color: rgb(250, 195, 85);
+}
+
+.list-items {
+  padding: 22px 33px;
+  width: 480px;
+  height: 20px;
+  margin-left: -43px;
+  border-radius: 34px;
+  background-color: rgb(206, 196, 245);
+}
+
+ol {
+  list-style: none;
+}
+
+#message {
+  color: rgb(143, 45, 248);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+  margin: 6px;
+  margin-top: 10px;
+  padding: 0px;
+  width: 150px;
+  height: 150px;
+  border-radius: 34px;
+}
+
+img:hover {
+  width: 149px;
+  height: 149px;
+  cursor: pointer;
+}
+
+.tick-image {
+  width: 180px;
+  height: 150px;
+}
+
+.tick-image:hover {
+  width: 180px;
+}
