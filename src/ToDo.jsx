@@ -18,8 +18,8 @@ function ToDo() {
 	}
 	
     function addTask() {
-        if(newTask.trim() != "") {
-            setTask(n => [...n, newTask]);
+        if(newTask.trim() !== "") {
+            setTask(t => [...t, newTask]);
             setNewTask("");
         }
     }
@@ -59,9 +59,9 @@ function ToDo() {
                 <ol>
                 <div className='list-items'>
                     {tasks.map((task, index) => <li>{task}
-                    <button className='delete-task' onClick={() => deleteTask(index)}>delete task</button>
-                    <button className='move-up'onClick={() => (moveTaskUp(index))}>move up</button>
-                <button className='move-down' onClick={() => (moveTaskDown(index))}>move down</button></li>)}
+                    <button className='delete-task' onClick={() => deleteTask(index)}>🗑️</button>
+                    <button className='move-up'onClick={() => (moveTaskUp(index))}>⬆️</button>
+                <button className='move-down' onClick={() => (moveTaskDown(index))}>⬇️</button></li>)}
             </div>
                 </ol>
                 </div>

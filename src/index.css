@@ -22,69 +22,91 @@ body {
 }
 
 .to-do-block {
+  width: 720px;
+  height: 420px;
   background-color: rgb(156, 175, 252);
   text-shadow: 3px 2px 2px #0664fc4d;
 }
 
-.add-task, .delete-task, .move-up, .move-down {
-  border-radius: 50px;
+button {
+  font-weight: bold;
+  border-radius: 23px;
   border: none;
-  width: 90px;
-  height: 50px;
+  width: 42px;
+  padding: 8px 2px;
+  font-size: 1.2em;
+  height: 49px;
+  margin: 6px;
+  transition: background-color 1.ms ease;
+  cursor: pointer;
+}
+
+.add-task {
+  width: 100px;
+  height: 60px;
   cursor: pointer;
   font-weight: bold;
   margin-left: 12px;
 }
 
-.add-task {
-  width: 95px;
-  height: 55px;
-}
-
-.get-tasks {
-  border-radius: 50px;
-  border: none;
-  padding: 22px 113px;
-}
-
-.delete-task {
-  background-color: rgb(255, 117, 117);
-}
-
-.delete-task:hover, .move-up:hover, .move-down:hover {
-  cursor: pointer;
-}
-
-.delete-task:hover {
-  background-color: rgb(247, 73, 73);
-}
-
 .move-up {
-  background-color: rgb(98, 178, 248);
+  background-color: #53a5fc;   
+  width: 39px;
+  height: 39px;
 }
 
 .move-up:hover {
-  background-color: rgb(55, 161, 255);
+  background-color: rgb(66, 178, 253);   
 }
 
 .move-down {
-  background-color: rgb(255, 216, 139);
+  background-color: #53a5fc;   
+  width: 39px;
+  height: 39px;
 }
 
 .move-down:hover {
-  background-color: rgb(250, 195, 85);
+  background-color: rgb(63, 174, 248);   
 }
 
-.list-items {
-  padding: 22px 33px;
-  width: 480px;
-  height: 20px;
-  margin-left: -43px;
-  border-radius: 34px;
-  background-color: rgb(206, 196, 245);
+.delete-task {
+  background-color: rgb(255, 110, 110);   
 }
+
+.delete-task:hover {
+  background-color: rgb(251, 49, 49);   
+}
+
+input{
+  border-radius: 19px;
+  padding: 10px;
+  border: 2px solid rgb(130, 130, 130);
+  font-size: 1.5em;
+  width: 360px;
+  margin: 5px;
+  height: 40px;
+  background-color: rgb(252, 252, 252);
+}
+
+li{
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 6px;
+  margin-bottom: 12px;
+  background-color: rgb(205, 224, 250);
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  text-align: center;
+}
+
 
 ol {
+  
+  margin: 3px;
+  padding: 0px;
+  font-size: 1.2em;
   list-style: none;
 }
 
